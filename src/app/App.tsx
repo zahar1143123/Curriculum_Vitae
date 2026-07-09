@@ -49,7 +49,7 @@ const t = {
         company: "Kwork",
         description:
           "Выполнял заказы по вёрстке и разработке небольших веб-сайтов. Работа с клиентами, соблюдение дедлайнов, итерационные правки по техническому заданию.",
-        tags: ["HTML/CSS", "JS", "React"],
+        tags: ["HTML/CSS", "TS", "React"],
       },
       {
         year: "2024–2025",
@@ -133,7 +133,7 @@ const t = {
         company: "Kwork",
         description:
           "Completed orders for web layout and small website development. Client communication, deadline management, iterative revisions based on technical specs.",
-        tags: ["HTML/CSS", "JS", "React"],
+        tags: ["HTML/CSS", "TS", "React"],
       },
       {
         year: "2024–2025",
@@ -185,7 +185,7 @@ const skillGroups = [
   },
   {
     label: "Dev",
-    items: ["HTML/CSS", "JS", "Node.js", "React", "Git", "Python", "Docker"],
+    items: ["HTML/CSS", "JS", "TS", "Node.js", "React", "Git", "Python", "C++", "Docker"],
   },
   {
     label: "Tools",
@@ -208,7 +208,7 @@ const skillGroupsEn = [
   },
   {
     label: "Dev",
-    items: ["HTML/CSS", "JS", "Node.js", "React", "Git", "Python", "Docker"],
+    items: ["HTML/CSS", "JS", "TS", "Node.js", "React", "Git", "Python", "C++", "Docker"],
   },
   {
     label: "Tools",
