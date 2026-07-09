@@ -14,6 +14,10 @@ const t = {
     contacts: "Контакты",
     phone: "+375 (29) 897-12-55",
     email: "zaharrubanik2007@gmail.com",
+    linkedin: "https://www.linkedin.com/in/zakhar-rubanik-13449b26a/",
+    github: "https://github.com/zahar1143123",
+    telegram: "https://t.me/CXZPEWQL",
+    telegramHandle: "@CXZPEWQL",
     hobbies: "Хобби и интересы",
     hobbiesItems: [
       "Олимпиадное программирование",
@@ -94,6 +98,10 @@ const t = {
     contacts: "Contact",
     phone: "+375 (29) 897-12-55",
     email: "zaharrubanik2007@gmail.com",
+    linkedin: "https://www.linkedin.com/in/zakhar-rubanik-13449b26a/",
+    github: "https://github.com/zahar1143123",
+    telegram: "https://t.me/CXZPEWQL",
+    telegramHandle: "@CXZPEWQL",
     hobbies: "Hobbies & Interests",
     hobbiesItems: [
       "Competitive Programming",
@@ -242,8 +250,86 @@ export default function App() {
 
       <div className="flex min-h-screen lg:flex-row flex-col">
         {/* ── Sidebar ─────────────────────────────────────────── */}
-        <aside className="lg:w-72 xl:w-80 bg-primary text-primary-foreground flex-shrink-0 flex flex-col">
-          <div className="sticky top-0 flex flex-col gap-8 p-8 lg:min-h-screen">
+        <aside className="lg:w-[300px] xl:w-[320px] lg:flex-shrink-0 bg-primary text-primary-foreground flex flex-col">
+
+          {/* ── Mobile / tablet header (<lg) ── */}
+          <div className="lg:hidden px-6 py-6">
+            <div className="flex items-center gap-4 mb-5">
+              <div className="w-12 h-12 rounded-full bg-primary-foreground/10 ring-1 ring-primary-foreground/20 flex items-center justify-center flex-shrink-0">
+                <span className="text-base font-semibold text-primary-foreground/70 select-none"
+                  style={{ fontFamily: "'Playfair Display', serif" }}>
+                  {data.name.split(" ").slice(0, 2).map((w: string) => w[0]).join("")}
+                </span>
+              </div>
+              <div>
+                <h1 className="text-base font-semibold leading-tight"
+                  style={{ fontFamily: "'Playfair Display', serif" }}>
+                  {data.name}
+                </h1>
+                <p className="text-accent text-xs mt-0.5 font-medium">{data.title}</p>
+                <div className="flex items-center gap-1 mt-1 text-primary-foreground/45 text-xs">
+                  <MapPin className="w-3 h-3" />{data.location}
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-3 mb-5">
+              {[
+                { label: "Tel", href: `tel:${data.phone.replace(/\s/g, "")}`, value: data.phone },
+                { label: "Email", href: `mailto:${data.email}`, value: data.email },
+                { label: "Telegram", href: "https://t.me/CXZPEWQL", value: "t.me/CXZPEWQL" },
+                { label: "LinkedIn", href: data.linkedin, value: "linkedin.com/in/zakhar-rubanik-13449b26a" },
+                { label: "GitHub", href: data.github, value: "github.com/zahar1143123" },
+              ].map(({ label, href, value }) => (
+                <a key={label} href={href}
+                  target={href.startsWith("http") ? "_blank" : undefined}
+                  rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  title={value}
+                  className="group flex flex-col gap-0.5 min-w-0">
+                  <span className="text-[9px] uppercase tracking-[0.12em] text-primary-foreground/30 group-hover:text-accent/60 transition-colors"
+                    style={{ fontFamily: "'DM Mono', monospace" }}>{label}</span>
+                  <span className="text-xs text-primary-foreground/70 group-hover:text-accent transition-colors truncate">{value}</span>
+                </a>
+              ))}
+            </div>
+
+            <div className="h-px bg-primary-foreground/10 mb-5" />
+
+            {/* Hobbies + Skills compact row */}
+            <div className="flex flex-col sm:flex-row gap-5">
+              <div className="min-w-0">
+                <p className="text-[9px] uppercase tracking-[0.12em] text-primary-foreground/30 mb-2"
+                  style={{ fontFamily: "'DM Mono', monospace" }}>{data.hobbies}</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {data.hobbiesItems.map((label: string) => (
+                    <span key={label} className="bg-primary-foreground/8 rounded px-2 py-1 text-xs text-primary-foreground/65 whitespace-nowrap">
+                      {label}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className="text-[9px] uppercase tracking-[0.12em] text-primary-foreground/30 mb-2"
+                  style={{ fontFamily: "'DM Mono', monospace" }}>{data.skills}</p>
+                <div className="flex flex-col gap-2">
+                  {groups.map((group) => (
+                    <div key={group.label}>
+                      <p className="text-[9px] text-accent/70 mb-1 font-medium">{group.label}</p>
+                      <div className="flex flex-wrap gap-1">
+                        {group.items.map((skill) => (
+                          <span key={skill} className="text-xs bg-primary-foreground/8 text-primary-foreground/60 px-2 py-0.5 rounded whitespace-nowrap">
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ── Desktop sidebar (lg+) ── */}
+          <div className="hidden lg:flex flex-col gap-7 p-7 sticky top-0 min-h-screen">
             {/* Monogram */}
             <div className="flex flex-col items-center gap-4 pt-8">
               <div className="w-20 h-20 rounded-full bg-primary-foreground/10 ring-1 ring-primary-foreground/20 flex items-center justify-center flex-shrink-0">
@@ -281,19 +367,33 @@ export default function App() {
               >
                 {data.contacts}
               </h2>
-              <div className="flex flex-col gap-2.5">
-                <a
-                  href={`tel:${data.phone.replace(/\s/g, "")}`}
-                  className="text-sm text-primary-foreground/70 hover:text-accent transition-colors"
-                >
-                  {data.phone}
-                </a>
-                <a
-                  href={`mailto:${data.email}`}
-                  className="text-sm text-primary-foreground/70 hover:text-accent transition-colors break-all"
-                >
-                  {data.email}
-                </a>
+              <div className="flex flex-col gap-3">
+                {[
+                  { label: "Tel", href: `tel:${data.phone.replace(/\s/g, "")}`, value: data.phone },
+                  { label: "Email", href: `mailto:${data.email}`, value: data.email },
+                  { label: "Telegram", href: "https://t.me/CXZPEWQL", value: "t.me/CXZPEWQL" },
+                  { label: "LinkedIn", href: data.linkedin, value: "linkedin.com/in/zakhar-rubanik-13449b26a" },
+                  { label: "GitHub", href: data.github, value: "github.com/zahar1143123" },
+                ].map(({ label, href, value }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target={href.startsWith("http") ? "_blank" : undefined}
+                    rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    title={value}
+                    className="group flex flex-col gap-0.5 min-w-0"
+                  >
+                    <span
+                      className="text-[10px] uppercase tracking-[0.12em] text-primary-foreground/30 group-hover:text-accent/60 transition-colors"
+                      style={{ fontFamily: "'DM Mono', monospace" }}
+                    >
+                      {label}
+                    </span>
+                    <span className="text-sm text-primary-foreground/70 group-hover:text-accent transition-colors truncate">
+                      {value}
+                    </span>
+                  </a>
+                ))}
               </div>
             </div>
 
