@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { MapPin } from "lucide-react";
 
 type Lang = "ru" | "en";
 
@@ -22,6 +21,13 @@ const t = {
     hobbiesItems: [
       "Олимпиадное программирование",
       "Компьютерные игры",
+      "Генерация идей",
+    ],
+    qualities: "Личностные качества",
+    qualitiesItems: [
+      "Системное мышление",
+      "Креативное моделирование",
+      "Рефлексия и рост",
     ],
     tabs: [
       "Образование",
@@ -30,7 +36,7 @@ const t = {
     ],
     education: [
       {
-        year: "2025–2029",
+        year: "2025 — н.в.",
         degree: "Бакалавр, Программная инженерия",
         institution:
           "ПГУ имени Ефросинии Полоцкой, факультет информационных технологий",
@@ -43,6 +49,14 @@ const t = {
       },
     ],
     experience: [
+       {
+        year: "2023–2024",
+        role: "Участник",
+        company: "Олимпиада Витебской области",
+        description:
+          "Олимпиада по созданию приложений Витебской области. Прошёл в финал, по итогам которого получил диплом III степени.",
+        tags: ["Python", "Git"],
+      },
       {
         year: "2024–2025",
         role: "Фрилансер",
@@ -56,7 +70,7 @@ const t = {
         role: "Фрилансер",
         company: "Fiverr",
         description:
-          "Разработка лендингов и простых веб-приложений для зарубежных заказчиков. Переписка и постановка задач на английском языке.",
+          "Разработка лендингов и интернет-магазинов для зарубежных заказчиков. Реализовал каталог товаров, корзину и форму оформления заказа. Переписка и постановка задач на английском языке.",
         tags: ["Node.js", "React", "Git"],
       },
       {
@@ -64,7 +78,7 @@ const t = {
         role: "Участник",
         company: "Яндекс Олимпиады",
         description:
-          "Участие в олимпиаде Яндекса по программированию. Решение алгоритмических задач на время, работа с различными структурами данных и классическими алгоритмами.",
+          "Участие в олимпиаде Яндекса по программированию. Решение алгоритмических задач на время, работа с различными структурами данных и классическими алгоритмами. Диплом по информатике.",
         tags: ["Алгоритмы", "Python", "Структуры данных"],
       },
     ],
@@ -75,7 +89,6 @@ const t = {
         provider: "Витебский дворец молодёжи",
         description:
           "Основы языка Python: синтаксис, управляющие конструкции, функции, работа с файлами и базовые алгоритмы.",
-        cert: "Свидетельство",
       },
       {
         year: "2021–2022",
@@ -83,7 +96,6 @@ const t = {
         provider: "Витебский дворец молодёжи",
         description:
           "HTML, CSS, основы JavaScript. Создание адаптивных страниц, работа с формами и базовая клиентская логика.",
-        cert: "Свидетельство",
       },
     ],
     skills: "Навыки",
@@ -106,6 +118,13 @@ const t = {
     hobbiesItems: [
       "Competitive Programming",
       "PC Gaming",
+      "Idea Generation",
+    ],
+    qualities: "Personal Qualities",
+    qualitiesItems: [
+      "Systems Thinking",
+      "Creative Modelling",
+      "Reflection & Growth",
     ],
     tabs: [
       "Education",
@@ -114,7 +133,7 @@ const t = {
     ],
     education: [
       {
-        year: "2025–2029",
+        year: "2025 — present",
         degree: "Bachelor, Software Engineering",
         institution:
           "PSU named after Euphrosyne of Polotsk, Faculty of Information Technologies",
@@ -127,6 +146,14 @@ const t = {
       },
     ],
     experience: [
+       {
+        year: "2023–2024",
+        role: "Participant",
+        company: "Vitebsk Region Olympiad",
+        description:
+          "Regional olympiad in application development. Reached the final stage and was awarded a 3rd Degree Diploma.",
+        tags: ["Python", "Git"],
+      },
       {
         year: "2024–2025",
         role: "Freelancer",
@@ -140,7 +167,7 @@ const t = {
         role: "Freelancer",
         company: "Fiverr",
         description:
-          "Built landing pages and simple web apps for international clients. All task management and communication conducted in English.",
+          "Built landing pages and e-commerce stores for international clients: product catalogue, shopping cart, and checkout form. All communication conducted in English.",
         tags: ["Node.js", "React", "Git"],
       },
       {
@@ -148,7 +175,7 @@ const t = {
         role: "Participant",
         company: "Yandex Olympiads",
         description:
-          "Competed in Yandex Programming Olympiad. Solved algorithmic problems under time constraints, working with data structures and classical algorithms.",
+          "Competed in Yandex Programming Olympiad. Solved algorithmic problems under time constraints, working with data structures and classical algorithms. Received a diploma in Computer Science.",
         tags: ["Algorithms", "Python", "Data Structures"],
       },
     ],
@@ -159,7 +186,6 @@ const t = {
         provider: "Vitebsk Youth Palace",
         description:
           "Python fundamentals: syntax, control flow, functions, file handling, and basic algorithms.",
-        cert: "Certificate",
       },
       {
         year: "2021–2022",
@@ -167,7 +193,6 @@ const t = {
         provider: "Vitebsk Youth Palace",
         description:
           "HTML, CSS, JavaScript basics. Building responsive pages, working with forms and basic client-side logic.",
-        cert: "Certificate",
       },
     ],
     skills: "Skills",
@@ -185,7 +210,7 @@ const skillGroups = [
   },
   {
     label: "Dev",
-    items: ["HTML/CSS", "JS", "Node.js", "React", "Git", "Python", "Docker"],
+    items: ["HTML/CSS", "JS", "TS", "Node.js", "React", "Next.js", "Git", "Python", "C++", "Docker"],
   },
   {
     label: "Tools",
@@ -208,7 +233,7 @@ const skillGroupsEn = [
   },
   {
     label: "Dev",
-    items: ["HTML/CSS", "JS", "Node.js", "React", "Git", "Python", "Docker"],
+    items: ["HTML/CSS", "JS", "TS", "Node.js", "React", "Next.js", "Git", "Python", "C++", "Docker"],
   },
   {
     label: "Tools",
@@ -222,7 +247,6 @@ const skillGroupsEn = [
 
 export default function App() {
   const [lang, setLang] = useState<Lang>("ru");
-  const [activeTab, setActiveTab] = useState(0);
   const data = t[lang];
   const groups = lang === "ru" ? skillGroups : skillGroupsEn;
 
@@ -236,7 +260,7 @@ export default function App() {
         {(["ru", "en"] as Lang[]).map((l) => (
           <button
             key={l}
-            onClick={() => { setLang(l); setActiveTab(0); }}
+            onClick={() => setLang(l)}
             className={`px-3 py-1 rounded-full text-xs font-medium tracking-widest uppercase transition-all duration-200 ${
               lang === l
                 ? "bg-accent text-accent-foreground shadow-sm"
@@ -267,12 +291,10 @@ export default function App() {
                   {data.name}
                 </h1>
                 <p className="text-accent text-xs mt-0.5 font-medium">{data.title}</p>
-                <div className="flex items-center gap-1 mt-1 text-primary-foreground/45 text-xs">
-                  <MapPin className="w-3 h-3" />{data.location}
-                </div>
+                <p className="mt-1 text-primary-foreground/45 text-xs">{data.location}</p>
               </div>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-3 mb-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3 mb-5">
               {[
                 { label: "Tel", href: `tel:${data.phone.replace(/\s/g, "")}`, value: data.phone },
                 { label: "Email", href: `mailto:${data.email}`, value: data.email },
@@ -294,13 +316,24 @@ export default function App() {
 
             <div className="h-px bg-primary-foreground/10 mb-5" />
 
-            {/* Hobbies + Skills compact row */}
-            <div className="flex flex-col sm:flex-row gap-5">
+            {/* Hobbies + Qualities + Skills */}
+            <div className="flex flex-col gap-5">
               <div className="min-w-0">
                 <p className="text-[9px] uppercase tracking-[0.12em] text-primary-foreground/30 mb-2"
                   style={{ fontFamily: "'DM Mono', monospace" }}>{data.hobbies}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {data.hobbiesItems.map((label: string) => (
+                    <span key={label} className="bg-primary-foreground/8 rounded px-2 py-1 text-xs text-primary-foreground/65 whitespace-nowrap">
+                      {label}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="min-w-0">
+                <p className="text-[9px] uppercase tracking-[0.12em] text-primary-foreground/30 mb-2"
+                  style={{ fontFamily: "'DM Mono', monospace" }}>{data.qualities}</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {data.qualitiesItems.map((label: string) => (
                     <span key={label} className="bg-primary-foreground/8 rounded px-2 py-1 text-xs text-primary-foreground/65 whitespace-nowrap">
                       {label}
                     </span>
@@ -350,10 +383,7 @@ export default function App() {
                 <p className="text-accent text-sm mt-1 font-medium tracking-wide">
                   {data.title}
                 </p>
-                <div className="flex items-center justify-center gap-1.5 mt-2 text-primary-foreground/50 text-xs">
-                  <MapPin className="w-3 h-3" />
-                  {data.location}
-                </div>
+                <p className="mt-2 text-primary-foreground/50 text-xs">{data.location}</p>
               </div>
             </div>
 
@@ -421,6 +451,28 @@ export default function App() {
 
             <div className="h-px bg-primary-foreground/10" />
 
+            {/* Qualities */}
+            <div>
+              <h2
+                className="text-xs uppercase tracking-[0.15em] text-primary-foreground/40 mb-4"
+                style={{ fontFamily: "'DM Mono', monospace" }}
+              >
+                {data.qualities}
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {data.qualitiesItems.map((label: string) => (
+                  <span
+                    key={label}
+                    className="bg-primary-foreground/8 rounded px-2.5 py-1.5 text-xs text-primary-foreground/65 whitespace-nowrap"
+                  >
+                    {label}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="h-px bg-primary-foreground/10" />
+
             {/* Skills */}
             <div className="pb-8">
               <h2
@@ -469,31 +521,16 @@ export default function App() {
             </div>
           </div>
 
-          {/* Tab bar */}
-          <div className="px-10 border-b border-border bg-card sticky top-0 z-40 overflow-x-auto">
-            <div className="flex gap-0 min-w-max">
-              {data.tabs.map((tab, i) => (
-                <button
-                  key={tab}
-                  onClick={() => setActiveTab(i)}
-                  className={`px-5 py-4 text-sm font-medium border-b-2 transition-all duration-150 whitespace-nowrap ${
-                    activeTab === i
-                      ? "border-accent text-accent"
-                      : "border-transparent text-muted-foreground hover:text-foreground hover:border-border"
-                  }`}
-                >
-                  {tab}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Tab content */}
-          <div className="flex-1 px-10 py-10">
-            <div className="max-w-3xl">
+          {/* Content */}
+          <div className="flex-1 px-6 sm:px-10 py-10">
+            <div className="max-w-3xl flex flex-col gap-12">
 
               {/* Education */}
-              {activeTab === 0 && (
+              <section>
+                <h2 className="text-xs uppercase tracking-[0.15em] text-muted-foreground/50 mb-6"
+                  style={{ fontFamily: "'DM Mono', monospace" }}>
+                  {data.tabs[0]}
+                </h2>
                 <div className="flex flex-col gap-8">
                   {data.education.map((item, i) => (
                     <div key={i} className="flex gap-6">
@@ -504,16 +541,12 @@ export default function App() {
                         )}
                       </div>
                       <div className="flex-1 pb-2">
-                        <span
-                          className="text-xs text-accent font-medium tracking-wide"
-                          style={{ fontFamily: "'DM Mono', monospace" }}
-                        >
+                        <span className="text-xs text-accent font-medium tracking-wide"
+                          style={{ fontFamily: "'DM Mono', monospace" }}>
                           {item.year}
                         </span>
-                        <h3
-                          className="text-lg font-semibold text-foreground mt-1"
-                          style={{ fontFamily: "'Playfair Display', serif" }}
-                        >
+                        <h3 className="text-lg font-semibold text-foreground mt-1"
+                          style={{ fontFamily: "'Playfair Display', serif" }}>
                           {item.degree}
                         </h3>
                         <p className="text-sm font-medium text-muted-foreground mt-0.5">
@@ -526,10 +559,8 @@ export default function App() {
                         )}
                         <div className="flex flex-wrap gap-1.5 mt-3">
                           {item.tags.map((tag) => (
-                            <span
-                              key={tag}
-                              className="text-xs bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full"
-                            >
+                            <span key={tag}
+                              className="text-xs bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">
                               {tag}
                             </span>
                           ))}
@@ -538,10 +569,16 @@ export default function App() {
                     </div>
                   ))}
                 </div>
-              )}
+              </section>
+
+              <div className="h-px bg-border" />
 
               {/* Work Experience */}
-              {activeTab === 1 && (
+              <section>
+                <h2 className="text-xs uppercase tracking-[0.15em] text-muted-foreground/50 mb-6"
+                  style={{ fontFamily: "'DM Mono', monospace" }}>
+                  {data.tabs[1]}
+                </h2>
                 <div className="flex flex-col gap-8">
                   {data.experience.map((item, i) => (
                     <div key={i} className="flex gap-6">
@@ -552,33 +589,25 @@ export default function App() {
                         )}
                       </div>
                       <div className="flex-1 pb-2">
-                        <span
-                          className="text-xs text-accent font-medium tracking-wide"
-                          style={{ fontFamily: "'DM Mono', monospace" }}
-                        >
+                        <span className="text-xs text-accent font-medium tracking-wide"
+                          style={{ fontFamily: "'DM Mono', monospace" }}>
                           {item.year}
                         </span>
                         <div className="flex items-baseline gap-2 mt-1 flex-wrap">
-                          <h3
-                            className="text-lg font-semibold text-foreground"
-                            style={{ fontFamily: "'Playfair Display', serif" }}
-                          >
+                          <h3 className="text-lg font-semibold text-foreground"
+                            style={{ fontFamily: "'Playfair Display', serif" }}>
                             {item.role}
                           </h3>
                           <span className="text-muted-foreground/40 text-sm">·</span>
-                          <span className="text-sm font-semibold text-accent">
-                            {item.company}
-                          </span>
+                          <span className="text-sm font-semibold text-accent">{item.company}</span>
                         </div>
                         <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
                           {item.description}
                         </p>
                         <div className="flex flex-wrap gap-1.5 mt-3">
                           {item.tags.map((tag) => (
-                            <span
-                              key={tag}
-                              className="text-xs bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full"
-                            >
+                            <span key={tag}
+                              className="text-xs bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">
                               {tag}
                             </span>
                           ))}
@@ -587,27 +616,24 @@ export default function App() {
                     </div>
                   ))}
                 </div>
-              )}
+              </section>
+
+              <div className="h-px bg-border" />
 
               {/* Courses */}
-              {activeTab === 2 && (
+              <section>
+                <h2 className="text-xs uppercase tracking-[0.15em] text-muted-foreground/50 mb-6"
+                  style={{ fontFamily: "'DM Mono', monospace" }}>
+                  {data.tabs[2]}
+                </h2>
                 <div className="grid sm:grid-cols-2 gap-5">
                   {data.courses.map((item, i) => (
-                    <div
-                      key={i}
-                      className="bg-card rounded-xl border border-border p-5 flex flex-col gap-3 hover:border-accent/40 hover:shadow-sm transition-all duration-200"
-                    >
-                      <div className="flex items-start justify-between gap-2">
-                        <span
-                          className="text-xs text-accent font-medium"
-                          style={{ fontFamily: "'DM Mono', monospace" }}
-                        >
-                          {item.year}
-                        </span>
-                        <span className="text-xs bg-accent/10 text-accent px-2 py-0.5 rounded-full font-medium flex-shrink-0">
-                          {item.cert}
-                        </span>
-                      </div>
+                    <div key={i}
+                      className="bg-card rounded-xl border border-border p-5 flex flex-col gap-3">
+                      <span className="text-xs text-accent font-medium"
+                        style={{ fontFamily: "'DM Mono', monospace" }}>
+                        {item.year}
+                      </span>
                       <div>
                         <h3 className="text-sm font-semibold text-foreground leading-snug">
                           {item.title}
@@ -622,7 +648,7 @@ export default function App() {
                     </div>
                   ))}
                 </div>
-              )}
+              </section>
 
             </div>
           </div>
