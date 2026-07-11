@@ -233,11 +233,8 @@ const skillGroupsEn = [
   },
   {
     label: "Dev",
-<<<<<<< HEAD
     items: ["HTML/CSS", "JS", "TS", "Node.js", "React", "Next.js", "Git", "Python", "C++", "Docker"],
-=======
-    items: ["HTML/CSS", "JS", "TS", "Node.js", "React", "Git", "Python", "C++", "Docker"],
->>>>>>> aba626a4da2f61016515a8cbcc8acecc9bc666a2
+
   },
   {
     label: "Tools",
