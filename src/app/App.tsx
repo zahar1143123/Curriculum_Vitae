@@ -9,7 +9,7 @@ const t = {
     location: "Витебск, Беларусь",
     about: "Обо мне",
     aboutText:
-      "Младший fullstack разработчик с годовым опытом работы в команде над учебными и реальными проектами. Параллельно выполнял заказы на фриланс-платформах Kwork и Fiverr: вёрстка, небольшие веб-приложения, автоматизация. Участник Яндекс Олимпиад по программированию. Стремлюсь писать чистый, поддерживаемый код и постоянно расширяю стек.",
+      "Младший fullstack разработчик (JavaScript, TypeScript, React, Node.js, Python) с опытом коммерческой разработки на фриланс-платформах и участия в олимпиадах по программированию. За последний год реализовал 5+ веб-проектов для зарубежных заказчиков: от лендингов до интернет-магазинов с полным циклом клиент–сервер. Финалист областной олимпиады по созданию приложений, участник Яндекс Олимпиады. Ориентирован на написание чистого, масштабируемого кода и быстрое освоение новых технологий.",
     contacts: "Контакты",
     phone: "+375 (29) 897-12-55",
     email: "zaharrubanik2007@gmail.com",
@@ -42,44 +42,45 @@ const t = {
           "ПГУ имени Ефросинии Полоцкой, факультет информационных технологий",
         description: "",
         tags: [
-          "Проектирование программ",
-          "Работа в команде",
-          "Качественный и масштабируемый код",
+          "Алгоритмы и структуры данных",
+          "Объектно-ориентированное программирование",
+          "Базы данных",
+          "Операционные системы",
         ],
       },
     ],
     experience: [
-       {
-        year: "2023–2024",
-        role: "Участник",
-        company: "Олимпиада Витебской области",
+      {
+        year: "2024–2025",
+        role: "Фрилансер",
+        company: "Fiverr",
         description:
-          "Олимпиада по созданию приложений Витебской области. Прошёл в финал, по итогам которого получил диплом III степени.",
-        tags: ["Python", "Git"],
+          "Разработал 5+ адаптивных веб-сайтов и интернет-магазинов (React, Node.js) для зарубежных заказчиков: реализовал архитектуру каталога товаров, корзины и чекаута. Вся коммуникация и постановка задач — на английском языке.",
+        tags: ["React", "Node.js", "Git", "HTML/CSS"],
       },
       {
         year: "2024–2025",
         role: "Фрилансер",
         company: "Kwork",
         description:
-          "Выполнял заказы по вёрстке и разработке небольших веб-сайтов. Работа с клиентами, соблюдение дедлайнов, итерационные правки по техническому заданию.",
-        tags: ["HTML/CSS", "TS", "React"],
-      },
-      {
-        year: "2024–2025",
-        role: "Фрилансер",
-        company: "Fiverr",
-        description:
-          "Разработка лендингов и интернет-магазинов для зарубежных заказчиков. Реализовал каталог товаров, корзину и форму оформления заказа. Переписка и постановка задач на английском языке.",
-        tags: ["Node.js", "React", "Git"],
+          "Выполнил 10+ заказов по вёрстке и разработке веб-сайтов (HTML/CSS, JS, React), соблюдая дедлайны и проводя итерационные правки. Получил повторные заказы от 3 клиентов благодаря качеству кода и срокам сдачи.",
+        tags: ["HTML/CSS", "JS", "React"],
       },
       {
         year: "2025",
         role: "Участник",
-        company: "Яндекс Олимпиады",
+        company: "Яндекс Олимпиада по программированию",
         description:
-          "Участие в олимпиаде Яндекса по программированию. Решение алгоритмических задач на время, работа с различными структурами данных и классическими алгоритмами. Диплом по информатике.",
-        tags: ["Алгоритмы", "Python", "Структуры данных"],
+          "Решил задачи повышенной сложности на Python за ограниченное время, применяя алгоритмы сортировки, графы и динамическое программирование. Подтверждён диплом по информатике.",
+        tags: ["Python", "Алгоритмы", "Структуры данных"],
+      },
+      {
+        year: "2023–2024",
+        role: "Финалист",
+        company: "Олимпиада Витебской области по созданию приложений",
+        description:
+          "Прошёл в финал областной олимпиады по разработке приложений, разработав проект на Python с версионированием через Git. По итогам финала получил диплом III степени.",
+        tags: ["Python", "Git"],
       },
     ],
     courses: [
@@ -106,7 +107,7 @@ const t = {
     location: "Vitebsk, Belarus",
     about: "About Me",
     aboutText:
-      "Junior fullstack developer with a year of teamwork experience on academic and real-world projects. Simultaneously took freelance orders on Kwork and Fiverr: layouts, small web applications, automation. Participant in Yandex Programming Olympiads. I focus on writing clean, maintainable code and continuously expanding my stack.",
+      "Junior fullstack developer (JavaScript, TypeScript, React, Node.js, Python) with commercial experience on freelance platforms and competitive programming. Delivered 5+ web projects for international clients over the past year, including e-commerce stores with full client–server architecture. Regional olympiad finalist, Yandex Olympiad participant. Focused on clean, scalable code and rapid adoption of new technologies.",
     contacts: "Contact",
     phone: "+375 (29) 897-12-55",
     email: "zaharrubanik2007@gmail.com",
@@ -139,44 +140,45 @@ const t = {
           "PSU named after Euphrosyne of Polotsk, Faculty of Information Technologies",
         description: "",
         tags: [
-          "Software Design",
-          "Teamwork",
-          "Clean & Scalable Code",
+          "Algorithms & Data Structures",
+          "Object-Oriented Programming",
+          "Databases",
+          "Operating Systems",
         ],
       },
     ],
     experience: [
-       {
-        year: "2023–2024",
-        role: "Participant",
-        company: "Vitebsk Region Olympiad",
+      {
+        year: "2024–2025",
+        role: "Freelancer",
+        company: "Fiverr",
         description:
-          "Regional olympiad in application development. Reached the final stage and was awarded a 3rd Degree Diploma.",
-        tags: ["Python", "Git"],
+          "Delivered 5+ responsive websites and e-commerce stores (React, Node.js) for international clients, implementing product catalogue, shopping cart, and checkout architecture. All project management and communication in English.",
+        tags: ["React", "Node.js", "Git", "HTML/CSS"],
       },
       {
         year: "2024–2025",
         role: "Freelancer",
         company: "Kwork",
         description:
-          "Completed orders for web layout and small website development. Client communication, deadline management, iterative revisions based on technical specs.",
-        tags: ["HTML/CSS", "TS", "React"],
-      },
-      {
-        year: "2024–2025",
-        role: "Freelancer",
-        company: "Fiverr",
-        description:
-          "Built landing pages and e-commerce stores for international clients: product catalogue, shopping cart, and checkout form. All communication conducted in English.",
-        tags: ["Node.js", "React", "Git"],
+          "Completed 10+ web layout and development orders (HTML/CSS, JS, React), consistently meeting deadlines and delivering iterative revisions. Earned repeat business from 3 clients based on code quality and turnaround time.",
+        tags: ["HTML/CSS", "JS", "React"],
       },
       {
         year: "2025",
         role: "Participant",
-        company: "Yandex Olympiads",
+        company: "Yandex Programming Olympiad",
         description:
-          "Competed in Yandex Programming Olympiad. Solved algorithmic problems under time constraints, working with data structures and classical algorithms. Received a diploma in Computer Science.",
-        tags: ["Algorithms", "Python", "Data Structures"],
+          "Solved advanced algorithmic problems in Python under time constraints — sorting, graphs, dynamic programming. Confirmed proficiency in complex data structures. Received a Computer Science diploma.",
+        tags: ["Python", "Algorithms", "Data Structures"],
+      },
+      {
+        year: "2023–2024",
+        role: "Finalist",
+        company: "Vitebsk Region App Development Olympiad",
+        description:
+          "Reached the final round of the regional application development olympiad, building a project in Python with Git-based version control. Awarded a 3rd Degree Diploma.",
+        tags: ["Python", "Git"],
       },
     ],
     courses: [
@@ -234,7 +236,6 @@ const skillGroupsEn = [
   {
     label: "Dev",
     items: ["HTML/CSS", "JS", "TS", "Node.js", "React", "Next.js", "Git", "Python", "C++", "Docker"],
-
   },
   {
     label: "Tools",
@@ -526,6 +527,53 @@ export default function App() {
           <div className="flex-1 px-6 sm:px-10 py-10">
             <div className="max-w-3xl flex flex-col gap-12">
 
+              {/* Work Experience — first for ATS weight */}
+              <section>
+                <h2 className="text-xs uppercase tracking-[0.15em] text-muted-foreground/50 mb-6"
+                  style={{ fontFamily: "'DM Mono', monospace" }}>
+                  {data.tabs[1]}
+                </h2>
+                <div className="flex flex-col gap-8">
+                  {data.experience.map((item, i) => (
+                    <div key={i} className="flex gap-6">
+                      <div className="flex flex-col items-center pt-1">
+                        <div className="w-2.5 h-2.5 rounded-full bg-accent flex-shrink-0" />
+                        {i < data.experience.length - 1 && (
+                          <div className="w-px flex-1 bg-border mt-2" />
+                        )}
+                      </div>
+                      <div className="flex-1 pb-2">
+                        <span className="text-xs text-accent font-medium tracking-wide"
+                          style={{ fontFamily: "'DM Mono', monospace" }}>
+                          {item.year}
+                        </span>
+                        <div className="flex items-baseline gap-2 mt-1 flex-wrap">
+                          <h3 className="text-lg font-semibold text-foreground"
+                            style={{ fontFamily: "'Playfair Display', serif" }}>
+                            {item.role}
+                          </h3>
+                          <span className="text-muted-foreground/40 text-sm">·</span>
+                          <span className="text-sm font-semibold text-accent">{item.company}</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+                          {item.description}
+                        </p>
+                        <div className="flex flex-wrap gap-1.5 mt-3">
+                          {item.tags.map((tag) => (
+                            <span key={tag}
+                              className="text-xs bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              <div className="h-px bg-border" />
+
               {/* Education */}
               <section>
                 <h2 className="text-xs uppercase tracking-[0.15em] text-muted-foreground/50 mb-6"
@@ -558,53 +606,6 @@ export default function App() {
                             {item.description}
                           </p>
                         )}
-                        <div className="flex flex-wrap gap-1.5 mt-3">
-                          {item.tags.map((tag) => (
-                            <span key={tag}
-                              className="text-xs bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              <div className="h-px bg-border" />
-
-              {/* Work Experience */}
-              <section>
-                <h2 className="text-xs uppercase tracking-[0.15em] text-muted-foreground/50 mb-6"
-                  style={{ fontFamily: "'DM Mono', monospace" }}>
-                  {data.tabs[1]}
-                </h2>
-                <div className="flex flex-col gap-8">
-                  {data.experience.map((item, i) => (
-                    <div key={i} className="flex gap-6">
-                      <div className="flex flex-col items-center pt-1">
-                        <div className="w-2.5 h-2.5 rounded-full bg-accent flex-shrink-0" />
-                        {i < data.experience.length - 1 && (
-                          <div className="w-px flex-1 bg-border mt-2" />
-                        )}
-                      </div>
-                      <div className="flex-1 pb-2">
-                        <span className="text-xs text-accent font-medium tracking-wide"
-                          style={{ fontFamily: "'DM Mono', monospace" }}>
-                          {item.year}
-                        </span>
-                        <div className="flex items-baseline gap-2 mt-1 flex-wrap">
-                          <h3 className="text-lg font-semibold text-foreground"
-                            style={{ fontFamily: "'Playfair Display', serif" }}>
-                            {item.role}
-                          </h3>
-                          <span className="text-muted-foreground/40 text-sm">·</span>
-                          <span className="text-sm font-semibold text-accent">{item.company}</span>
-                        </div>
-                        <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
-                          {item.description}
-                        </p>
                         <div className="flex flex-wrap gap-1.5 mt-3">
                           {item.tags.map((tag) => (
                             <span key={tag}
