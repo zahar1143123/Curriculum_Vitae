@@ -303,6 +303,7 @@ export default function App() {
                 { label: "Telegram", href: "https://t.me/CXZPEWQL", value: "t.me/CXZPEWQL" },
                 { label: "LinkedIn", href: data.linkedin, value: "linkedin.com/in/zakhar-rubanik-13449b26a" },
                 { label: "GitHub", href: data.github, value: "github.com/zahar1143123" },
+                { label: "LeetCode", href: "https://leetcode.com/u/zaharrubanik2007/", value: "leetcode.com/u/zaharrubanik2007" },
               ].map(({ label, href, value }) => (
                 <a key={label} href={href}
                   target={href.startsWith("http") ? "_blank" : undefined}
@@ -406,6 +407,7 @@ export default function App() {
                   { label: "Telegram", href: "https://t.me/CXZPEWQL", value: "t.me/CXZPEWQL" },
                   { label: "LinkedIn", href: data.linkedin, value: "linkedin.com/in/zakhar-rubanik-13449b26a" },
                   { label: "GitHub", href: data.github, value: "github.com/zahar1143123" },
+                { label: "LeetCode", href: "https://leetcode.com/u/zaharrubanik2007/", value: "leetcode.com/u/zaharrubanik2007" },
                 ].map(({ label, href, value }) => (
                   <a
                     key={label}
